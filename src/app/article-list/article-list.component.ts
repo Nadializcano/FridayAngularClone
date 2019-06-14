@@ -1,15 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { Article } from '../models/article.model';
 
 @Component({
   selector: 'app-article-list',
   templateUrl: './article-list.component.html',
   styleUrls: ['./article-list.component.css']
 })
-export class ArticleListComponent implements OnInit {
+export class ArticleListComponent {
 
-  constructor() { }
+  articles: Article[] = [
+    new Article('Food'),
+    new Article ('Beauty'),
+  ]
 
-  ngOnInit() {
+  editArticle(){
+
+
   }
+
+
 
 }
