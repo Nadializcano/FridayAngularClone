@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { List } from '.models/list.model';
+import { Article } from './models/article.model';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +7,16 @@ import { List } from '.models/list.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+
+  selectedArticle = null;
+
+    masterArticleList: [Article] = [
+      new Article('Food'),
+      new Article ('Beauty'),
+    ]
+
+    editArticle(clickedArticle){
+      this.selectedArticle = clickedArticle;
+
+    }
 }
