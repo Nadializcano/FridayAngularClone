@@ -1,4 +1,4 @@
-# Coming soon!
+# BRIT+CO cloneAngular
 
 [![forthebadge](http://forthebadge.com/images/badges/made-with-javascript.svg)](http://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
@@ -11,7 +11,7 @@
 
 T
 # Clone this repository
-$ git clone https://github.com/...
+$ git clone https://github.com/Nadializcano/FridayBrit-Co-AngularClone.git
 
 # Go into the repository
 $ cd ...
