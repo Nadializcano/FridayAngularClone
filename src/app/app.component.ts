@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { List } from '.models/list.model';
 
 @Component({
   selector: 'app-root',
