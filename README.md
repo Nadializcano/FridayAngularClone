@@ -7,6 +7,8 @@
 
 ## How To Use
 
+#Install Nod.Js
+
 T
 # Clone this repository
 $ git clone https://github.com/...
@@ -18,5 +20,9 @@ $ cd ...
 $ npm install
 
 # Run the app
-$ npm start
+$ npm run start
+
+#Open http://localhost:4200/
 ```
+
+#Technologies Used
