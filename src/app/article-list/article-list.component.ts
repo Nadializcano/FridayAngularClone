@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Article } from '../models/article.model';
 
 @Component({
@@ -8,9 +8,11 @@ import { Article } from '../models/article.model';
 })
 export class ArticleListComponent {
   @Input() childArticleList: Article[];
+  @Output() clickSender = new EventEmitter();
 
 
-  editArticle(){
+  editArticle(articleToEdit: Article){
+    this.clickSender.emit(articleToEdit);
 
 
   }
