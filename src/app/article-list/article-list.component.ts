@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Article } from '../models/article.model';
 
 @Component({
@@ -7,11 +7,8 @@ import { Article } from '../models/article.model';
   styleUrls: ['./article-list.component.css']
 })
 export class ArticleListComponent {
+  @Input() childArticleList: Article[];
 
-  articles: Article[] = [
-    new Article('Food'),
-    new Article ('Beauty'),
-  ]
 
   editArticle(){
 
