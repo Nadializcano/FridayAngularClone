@@ -12,11 +12,14 @@ export class AppComponent {
 
     masterArticleList: [Article] = [
       new Article('Food'),
-      new Article ('Beauty'),
+      new Article ('Beauty')
     ]
 
     editArticle(clickedArticle){
       this.selectedArticle = clickedArticle;
+    }
 
+    finishedEditing(){
+      this.selectedArticle = null;
     }
 }
