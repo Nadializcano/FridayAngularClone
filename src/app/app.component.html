@@ -8,3 +8,4 @@
 <h2>BRIT+CO </h2>
 
 <app-article-list [childArticleList]="masterArticleList" (clickSender)="editArticle($event)"></app-article-list>
+<app-edit-article [childSelectedArticle]="selectedArticle" (clickedDone)="finishedEditing"></app-edit-article>
