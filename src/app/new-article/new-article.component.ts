@@ -7,9 +7,15 @@ import { Article } from '../models/article.model';
   styleUrls: ['./new-article.component.css']
 })
 export class NewArticleComponent {
+  @Output() sendArticle = new EventEmitter();
+
+  submitForm(title: string) {
+    let newArticle: Article = new Article(title);
+    this.sendArticle.emit(newArticle);
+  }
 
   constructor() { }
 
-  
+
 
 }
