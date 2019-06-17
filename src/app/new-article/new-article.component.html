@@ -1,3 +1,9 @@
-<p>
-  new-article works!
-</p>
+<h1>New Task</h1>
+<div>
+ <label>Enter Article:</label>
+ <input #newTitle>
+</div>
+<div>
+
+  <button (click)="submitForm(newTitle.value)">Add</button>
+</div>
