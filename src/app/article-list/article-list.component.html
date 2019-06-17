@@ -1,3 +1,17 @@
-<ul>
-  <li *ngFor="let currentArticle of childArticleList">{{currentArticle.title}} <button (click)="editArticle(currentArticle)">Edit!</button></li>
-</ul>
+<section class="card-module layout-x-large standard">
+  <h2 class="header-1">Travel Ideas</h2>
+  <div class="grid-col-4">
+    <a class="card card-dense--mobile ">
+      <div class="card-image standard-post">
+        <div class="spacer ">
+        </div>
+        <img src="" class="fade-in loaded" data-visible="true"></div>
+        <div class="card-information">
+          <div class="card-category header-5 header-secondary">Lifestyle</div>
+        <div class="card-title" *ngFor="let currentArticle of childArticleList">{{currentArticle.title}}<button (click)="editArticle(currentArticle)">Edit!</button></div>
+      </div>
+    </a>
+
+  </div>
+
+</section>
