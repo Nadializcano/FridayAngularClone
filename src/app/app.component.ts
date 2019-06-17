@@ -22,4 +22,8 @@ export class AppComponent {
     finishedEditing(){
       this.selectedArticle = null;
     }
+
+    addArticle(newArticle: Article) {
+      this.masterArticleList.push(newArticle);
+    }
 }
