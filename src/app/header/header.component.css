@@ -1,20 +1,9 @@
-header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
+@media screen and (min-width: 568px)
+img .nav-logo {
+    padding: 22px 30px;
+    position: absolute;
     height: 60px;
-    border-bottom: 1px solid #f4f4f4;
-    background: #fff;
-    z-index: 11;
-    display: block;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.nav-logo {
+    width: 170px;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     -webkit-backface-visibility: hidden;
@@ -24,6 +13,24 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    height: 60px;
     z-index: 3;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 60px;
+    border-bottom: 1px solid #f4f4f4;
+    background: #fff;
+    z-index: 11;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
 }
