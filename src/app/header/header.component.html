@@ -1,38 +1,51 @@
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <title>Brit+Co</title>
-  </head>
-  <body>
-    <main id="homepage-app" class="app-base">
-    <header class="article-nav">
-      <a href="/"><img src="https://components.britcdn.com/assets/images/logo.svg" alt="Brit + Co Logo" class="nav-logo"></a>
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
 
-      <ul class="nav">
-        <li priority="5" class="nav-item link-secondary"><a href="https://www.brit.co/category/beauty/">Beauty</a></li>
-        <li priority="6" class="nav-item link-secondary hidden"><a href="https://www.brit.co/category/fashion/">Fashion</a></li>
-        <li priority="7" class="nav-item link-secondary hidden"><a href="https://www.brit.co/category/food/">Food</a></li>
-        <li priority="8" class="nav-item link-secondary hidden"><a href="https://www.brit.co/category/living/">Home</a></li>
-        <li priority="9" class="nav-item link-secondary hidden"><a href="https://www.brit.co/category/issues/">Issues</a></li>
-        <li priority="4" class="nav-item link-secondary"><a href="https://www.brit.co/video/">Video</a></li>
-        <li priority="3" class="nav-item link-secondary"><a href="https://www.brit.co/learn/catalog/">Classes</a></li>
-        <li priority="2" class="nav-item link-secondary"><a href="https://www.brit.co/shopping/">Shop</a></li>
-        <!-- <li priority="9" class="overflow-item mobile-only"><a href="https://www.brit.co/category/lifestyle/relationships/" class="link-secondary">Relationships</a></li>
-        <li priority="10" class="overflow-item mobile-only"><a href="https://www.brit.co/category/tutorials/" class="link-secondary">DIY</a></li>
-        <li priority="11" class="overflow-item mobile-only"><a href="https://www.brit.co/category/lifestyle/health/" class="link-secondary">Health</a></li>
-        <li priority="12" class="overflow-item mobile-only"><a href="https://www.brit.co/riding-solo-how-to-do-things-alone-as-a-woman/" class="link-secondary">Riding Solo</a></li>
-        <li priority="13" class="overflow-item mobile-only"><a href="https://www.brit.co/category/kids/" class="link-secondary">Moms</a></li>
-        <li priority="14" class="overflow-item mobile-only"><a href="https://www.brit.co/category/entertainment/" class="link-secondary">Entertainment</a></li>
-        <li priority="15" class="overflow-item mobile-only"><a href="https://www.brit.co/category/lifestyle/brits-blog/" class="link-secondary">Britʼs Blog</a></li>
-        <li priority="16" class="overflow-item mobile-only"><a href="https://www.brit.co/creative-crushin/" class="link-secondary">✨ Creative Crushinʼ</a></li>
-        <li priority="17" class="overflow-item mobile-only"><a href="https://www.brit.co/self-care-city-guide/self-care-city-guide/" class="link-secondary">🤸‍ SELF-CARE CITY GUIDE</a></li>
-        <li priority="0" class="nav-item more-item desktop-only"><span>More</span> <div class="overflow-container"><ul class="overflow-list"><li priority="5" class="overflow-item hidden"><a href="https://www.brit.co/category/beauty/" class="link-secondary">Beauty</a></li> -->
+        <div class="navbar-header">
+            <button button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" rel="home" href="#" title="Brit+Co">
+                <img src="https://components.britcdn.com/assets/images/logo.svg" alt="Brit + Co Logo" class="nav-logo" width="150">
+            </a>
+        </div>
 
-    </ul>
-    </header>
-    </main>
-  </body>
-</html>
+        <div id="navbar" class="collapse navbar-collapse navbar-responsive-collapse">
+
+            <ul class="nav navbar-nav">
+                <li><a href="#">Beauty</a></li>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Issues</a></li>
+                <li><a href="#">Video</a></li>
+                <li><a href="#">Classes</a></li>
+                <li><a href="#">Shop</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li class="dropdown-header">Nav header</li>
+                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+			<form class="navbar-form navbar-right" role="search" method="get" id="searchform" action="">
+				<div class="w3-padding w3-xlarge w3-text-gray">
+				<i class="material-icons">search</i>
+				</div>
+			</form>
+		</div>
+
+
+
+    </div>
+</div>
