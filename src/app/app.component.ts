@@ -7,6 +7,7 @@ import { Article } from './models/article.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  title = "Home";
 
   selectedArticle = null;
 

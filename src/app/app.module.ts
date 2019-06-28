@@ -9,6 +9,7 @@ import { EditArticleComponent } from './edit-article/edit-article.component';
 import { NewArticleComponent } from './new-article/new-article.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
+import { routing } from './app.routing';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { HomeComponent } from './home/home.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]

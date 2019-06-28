@@ -1,0 +1,77 @@
+.card-module.featured {
+    margin-top: 0;
+    padding: 0;
+    background: linear-gradient(60deg,#ffe8d9,#e9a6a6);
+    height: 575px;
+    width: 2000px;
+}
+
+.lib-img-show{
+  width: 6000px;
+}
+
+/* body {
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f7f7f7;
+} */
+
+.lib-panel {
+    margin-bottom: 100Px;
+    padding-left: 40px;
+    padding-top: 50px;
+    width: 1200px;
+}
+.lib-panel img {
+    width: 100%;
+}
+
+.lib-panel .row,
+.lib-panel .col-md-6 {
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+
+.lib-panel .lib-row {
+    padding: 0 20px 0 20px;
+}
+
+.lib-panel .lib-row.lib-header {
+    background-color: #FFFFFF;
+    font-size: 20px;
+    padding: 10px 20px 0 20px;
+}
+
+.lib-panel .lib-row.lib-header .lib-header-seperator {
+    height: 2px;
+    width: 26px;
+    background-color: #d9d9d9;
+    margin: 7px 0 7px 0;
+}
+
+.lib-panel .lib-row.lib-desc {
+    position: relative;
+    height: 100%;
+    display: block;
+    font-size: 13px;
+}
+.lib-panel .lib-row.lib-desc a{
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 20px;
+}
+
+.row-margin-bottom {
+    margin-bottom: 20px;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.10);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.10);
+}
+
+.no-padding {
+    padding: 0;
+}
