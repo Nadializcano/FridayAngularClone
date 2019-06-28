@@ -1,11 +1,6 @@
+
 <app-header></app-header>
-<div class="container">
-  <h1>{{title}}</h1>
-  <router-outlet></router-outlet>
-</div>
-
-
-
+<router-outlet></router-outlet>
 
 
 <app-article-list [childArticleList]="masterArticleList" (clickSender)="editArticle($event)"></app-article-list>

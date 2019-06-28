@@ -1,29 +1,26 @@
 .card-module.featured {
     margin-top: 0;
-    padding: 0;
+    padding-left: 0;
     background: linear-gradient(60deg,#ffe8d9,#e9a6a6);
-    height: 575px;
-    width: 2000px;
+    height: 600px;
+    width: 1500px;
 }
 
-.lib-img-show{
-  width: 6000px;
-}
+.card-excerpt {
+  margin-top: 30px;
+  font-size: 18px;
+  font-style: helvetica;
 
-/* body {
-    padding: 20px;
-    font-family: 'Open Sans', sans-serif;
-    background-color: #f7f7f7;
-} */
+}
 
 .lib-panel {
     margin-bottom: 100Px;
-    padding-left: 40px;
-    padding-top: 50px;
-    width: 1200px;
+    padding-left: 170px;
+    padding-top: 90px;
+    width: 1000px;
 }
 .lib-panel img {
-    width: 100%;
+    width: 170%;
 }
 
 .lib-panel .row,
@@ -49,6 +46,9 @@
     background-color: #d9d9d9;
     margin: 7px 0 7px 0;
 }
+.read-more {
+  font-size: 20px;
+}
 
 .lib-panel .lib-row.lib-desc {
     position: relative;
@@ -56,7 +56,7 @@
     display: block;
     font-size: 13px;
 }
-.lib-panel .lib-row.lib-desc a{
+.lib-panel .lib-row.lib-desc {
     position: absolute;
     width: 100%;
     bottom: 10px;

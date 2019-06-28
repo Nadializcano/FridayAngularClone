@@ -10,6 +10,7 @@ import { NewArticleComponent } from './new-article/new-article.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { routing } from './app.routing';
+import { BeautyComponent } from './beauty/beauty.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { routing } from './app.routing';
     EditArticleComponent,
     NewArticleComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    BeautyComponent
   ],
   imports: [
     BrowserModule,
