@@ -1,0 +1,8 @@
+<div *ngIf="childSelectedBeauty">
+  <h3>{{childSelectedBeauty.title}}</h3>
+  <h3>Edit Beauty</h3>
+  <label>Enter Beauty title:</label>
+  <input [(ngModel)]="childSelectedBeauty.title">
+
+  <button (click)="finishedEditing()">Done</button>
+</div>

@@ -3,6 +3,6 @@
 <router-outlet></router-outlet>
 
 
-<app-article-list [childArticleList]="masterArticleList" (clickSender)="editArticle($event)"></app-article-list>
-<app-edit-article [childSelectedArticle]="selectedArticle" (clickedDone)="finishedEditing"></app-edit-article>
-<app-new-article (sendArticle)="addArticle($event)"></app-new-article>
+<app-beauty [childBeauty]="masterBeauty" (clickSender)="editBeauty($event)"></app-beauty>
+<app-edit-beauty [childSelectedBeauty]="selectedBeauty" (clickedDone)="finishedEditing"></app-edit-beauty>
+<app-new-beauty (sendBeauty)="addBeauty($event)"></app-new-beauty>

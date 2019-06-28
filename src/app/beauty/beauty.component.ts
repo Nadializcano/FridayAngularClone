@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Beauty } from '../models/beauty.model';
+
 
 @Component({
   selector: 'app-beauty',
   templateUrl: './beauty.component.html',
   styleUrls: ['./beauty.component.css']
 })
-export class BeautyComponent implements OnInit {
+export class BeautyComponent  {
 
-  constructor() { }
+  @Input() childBeauty: Beauty[];
+  @Output() clickSender = new EventEmitter();
 
-  ngOnInit() {
-  }
 
 }

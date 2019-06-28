@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Article } from './models/article.model';
+import { Beauty } from './models/beauty.model';
 
 @Component({
   selector: 'app-root',
@@ -9,22 +9,22 @@ import { Article } from './models/article.model';
 export class AppComponent {
   title = "Home";
 
-  selectedArticle = null;
+  selectedBeauty = null;
 
-    masterArticleList: [Article] = [
-      new Article('Food'),
-      new Article ('Beauty')
+    masterBeauty: [Beauty] = [
+      new Beauty('Food'),
+      new Beauty ('Beauty')
     ]
 
-    editArticle(clickedArticle){
-      this.selectedArticle = clickedArticle;
+    editBeauty(clickedBeauty){
+      this.selectedBeauty = clickedBeauty;
     }
 
     finishedEditing(){
-      this.selectedArticle = null;
+      this.selectedBeauty = null;
     }
 
-    addArticle(newArticle: Article) {
-      this.masterArticleList.push(newArticle);
+    addBeauty(newBeauty: Beauty) {
+      this.masterBeauty.push(newBeauty);
     }
 }
