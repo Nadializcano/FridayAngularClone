@@ -2,7 +2,7 @@
   <h2 class="header-1">Travel Ideas</h2>
 
 <div class="grid-col-3">
-<!-- <div  *ngFor="let currentBeauty of childBeauty" > -->
+<div  *ngFor="let currentBeauty of childBeauty" >
   <a class="card card-dense--mobile ">
     <div class="card-image standard-post">
     <div class="spacer ">
@@ -10,7 +10,7 @@
     <img src="https://images.britcdn.com/wp-content/uploads/2017/12/health-promo.jpg?w=400&amp;auto=format" class="fade-in loaded" data-visible="true"></div>
     <div class="card-information">
       <div class="card-category header-5 header-secondary"></div>
-      <div *ngFor="let currentBeauty of childBeauty" (click)="goToDetailPage(beauty)" class="">
+      <div (click)="goToDetailPage(beauty)" class="">
         <div class="card-title" ><span>30 Clean-Eating Dinner Recipe Ideas You Can Make in 30 Minutes or Less</span></div>
       </div>
 
@@ -18,9 +18,9 @@
   </a>
 
 </div>
-<!-- </div> -->
+</div>
 
-<div class="grid-col-4">
+<!-- <div class="grid-col-4">
   <a class="card card-dense--mobile ">
     <div class="card-image standard-post">
       <div class="spacer ">
@@ -32,6 +32,6 @@
     </div>
   </a>
 
-</div>
+</div> -->
 
 </section>
