@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { routing } from './app.routing';
 import { BeautyComponent } from './beauty/beauty.component';
+import { ArticleDetailsComponent } from './article-details/article-details.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { BeautyComponent } from './beauty/beauty.component';
     NewBeautyComponent,
     HeaderComponent,
     HomeComponent,
-    BeautyComponent
+    BeautyComponent,
+    ArticleDetailsComponent
   ],
   imports: [
     BrowserModule,

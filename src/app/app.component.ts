@@ -9,22 +9,22 @@ import { Beauty } from './models/beauty.model';
 export class AppComponent {
   title = "Home";
 
-  selectedBeauty = null;
+  // selectedBeauty = null;
 
-    masterBeauty: [Beauty] = [
-      new Beauty('Food'),
-      new Beauty ('Beauty')
-    ]
+    // masterBeauty: [Beauty] = [
+    //   new Beauty('Food'),
+    //   new Beauty ('Beauty')
+    // ]
 
-    editBeauty(clickedBeauty){
-      this.selectedBeauty = clickedBeauty;
-    }
-
-    finishedEditing(){
-      this.selectedBeauty = null;
-    }
-
-    addBeauty(newBeauty: Beauty) {
-      this.masterBeauty.push(newBeauty);
-    }
+    // editBeauty(clickedBeauty){
+    //   this.selectedBeauty = clickedBeauty;
+    // }
+    //
+    // finishedEditing(){
+    //   this.selectedBeauty = null;
+    // }
+    //
+    // addBeauty(newBeauty: Beauty) {
+    //   this.masterBeauty.push(newBeauty);
+    // }
 }
