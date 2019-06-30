@@ -1,7 +1,8 @@
-{ "articles": [{
+{ "beauties": [{
     "title": "Crockpot Recipes",
     "category": "Food",
     "description": "Recipe ingredients.",
     "id": "1"
-    }]
+    }
+  ]
 }

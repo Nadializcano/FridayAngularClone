@@ -1,1 +1,6 @@
-<h2>This beauty has id number: {{beautyId}}</h2>
+<div>
+  <h3>{{(beautyToDisplay | async)?.title}}</h3>
+  <h4>{{(beautyToDisplay | async)?.description}}</h4>
+  <h4>{{(beautyToDisplay | async)?.category}}</h4>
+
+</div>
