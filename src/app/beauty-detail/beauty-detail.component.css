@@ -1,0 +1,26 @@
+.container {
+  background-color: #f3f6ff;
+  height: 200px;
+  width: 2000px;
+}
+
+.category-header {
+  display: flex;
+  min-height: 250px;
+}
+
+.category-name {
+    margin: auto;
+    padding: 15px;
+    background: #fff;
+    font-weight: 700;
+    max-width: 800px;
+}
+
+.header-1 {
+    font-size: 4rem;
+    line-height: 2.5rem;
+    letter-spacing: .05556rem;
+    font-weight: 800;
+
+}
