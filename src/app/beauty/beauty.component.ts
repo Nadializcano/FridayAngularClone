@@ -1,22 +1,31 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Beauty } from '../models/beauty.model';
 import { Router } from '@angular/router';
+import { FirebaseListObservable } from 'angularfire2/database';
+import { BeautyService } from '../beauty.service';
 
 
 @Component({
   selector: 'app-beauty',
   templateUrl: './beauty.component.html',
-  styleUrls: ['./beauty.component.css']
+  styleUrls: ['./beauty.component.css'],
+  providers: [BeautyService]
 })
-export class BeautyComponent  {
-  constructor(private router: Router){}
+export class BeautyComponent implements OnInit {
+  beauties: FirebaseListObservable<any[]>;
 
-  @Input() childBeauty: Beauty[] = [
-    new Beauty("Title Test", 2)
-  ];
-  @Output() clickSender = new EventEmitter();
+  constructor(private router: Router,
+     private BeautyService: BeautyService){}
 
-  goToDetailPage(clickedBeauty: Beauty) {
-       this.router.navigate(['childBeauty', clickedBeauty.id]);
+  ngOnInit() {
+  this.beauties = this.BeautyService.getBeauties();
+}
+
+  // Beauties: Beauty[] = [
+  //   new Beauty("Title Test", 2)
+  // ];
+
+  goToDetailPage(clickedBeauty) {
+       this.router.navigate(['beauties', clickedBeauty.$key]);
      };
 }

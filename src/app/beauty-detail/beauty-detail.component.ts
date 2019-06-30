@@ -2,14 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { Beauty } from '../models/beauty.model';
+import { BeautyService} from '../beauty.service';
 
 
 @Component({
-  selector: 'app-article-details',
-  templateUrl: './article-details.component.html',
-  styleUrls: ['./article-details.component.css']
+  selector: 'app-beauty-detail',
+  templateUrl: './beauty-detail.component.html',
+  styleUrls: ['./beauty-detail.component.css']
 })
-export class ArticleDetailsComponent implements OnInit {
+export class BeautyDetailComponent implements OnInit {
   beautyId: number = null;
 
   constructor(private route: ActivatedRoute, private location: Location) {}
