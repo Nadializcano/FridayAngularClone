@@ -9,6 +9,16 @@ import { HomeComponent } from './home/home.component';
 import { routing } from './app.routing';
 import { BeautyComponent } from './beauty/beauty.component';
 import { ArticleDetailsComponent } from './article-details/article-details.component';
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
 
 
 @NgModule({
@@ -24,7 +34,9 @@ import { ArticleDetailsComponent } from './article-details/article-details.compo
   imports: [
     BrowserModule,
     FormsModule,
-    routing
+    routing,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
