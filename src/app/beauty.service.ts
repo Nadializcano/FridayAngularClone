@@ -18,4 +18,8 @@ export class BeautyService {
     return this.database.object('beauties/' + beautyId);
   }
 
+  addBeauty(newBeauty: Beauty){
+    this.beauties.push(newBeauty);
+  }
+
 }

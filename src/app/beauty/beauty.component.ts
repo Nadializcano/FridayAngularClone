@@ -13,9 +13,12 @@ import { BeautyService } from '../beauty.service';
 })
 export class BeautyComponent implements OnInit {
   beauties: FirebaseListObservable<any[]>;
+   currentRoute: string = this.router.url;
 
   constructor(private router: Router,
-     private BeautyService: BeautyService){}
+     private BeautyService: BeautyService){
+
+     }
 
   ngOnInit() {
   this.beauties = this.BeautyService.getBeauties();

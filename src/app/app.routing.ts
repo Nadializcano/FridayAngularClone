@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { BeautyComponent } from './beauty/beauty.component';
 import { BeautyDetailComponent } from './beauty-detail/beauty-detail.component';
+import { AdminComponent } from './admin/admin.component';
 
 const appRoutes: Routes = [
   {
@@ -16,7 +17,11 @@ const appRoutes: Routes = [
   {
     path: 'beauties/:id',
     component: BeautyDetailComponent
-  }
+  },
+  {
+  path: 'admin',
+        component: AdminComponent,
+    }
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
