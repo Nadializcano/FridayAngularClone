@@ -16,17 +16,11 @@ export class BeautyComponent implements OnInit {
    currentRoute: string = this.router.url;
 
   constructor(private router: Router,
-     private BeautyService: BeautyService){
-
-     }
+     private BeautyService: BeautyService) {}
 
   ngOnInit() {
   this.beauties = this.BeautyService.getBeauties();
 }
-
-  // Beauties: Beauty[] = [
-  //   new Beauty("Title Test", 2)
-  // ];
 
   goToDetailPage(clickedBeauty) {
        this.router.navigate(['beauties', clickedBeauty.$key]);

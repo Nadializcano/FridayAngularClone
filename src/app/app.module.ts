@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 // import { EditBeautyComponent } from './edit-beauty/edit-beauty.component';
@@ -18,15 +19,14 @@ export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
   authDomain: masterFirebaseConfig.authDomain,
   databaseURL: masterFirebaseConfig.databaseURL,
-  storageBucket: masterFirebaseConfig.storageBucket
+  storageBucket: masterFirebaseConfig.storageBucket,
+  messagingSenderId: masterFirebaseConfig.messagingSenderId
 };
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    // EditBeautyComponent,
-    // NewBeautyComponent,
     HeaderComponent,
     HomeComponent,
     BeautyComponent,
@@ -36,6 +36,7 @@ export const firebaseConfig = {
   imports: [
     BrowserModule,
     FormsModule,
+    HttpModule,
     routing,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,

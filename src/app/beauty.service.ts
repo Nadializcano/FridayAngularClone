@@ -22,4 +22,11 @@ export class BeautyService {
     this.beauties.push(newBeauty);
   }
 
+  updateBeauty(localUpdatedBeauty){
+    var beautyEntryInFirebase = this.getBeautyById(localUpdatedBeauty.$key);
+    beautyEntryInFirebase.update({title: localUpdatedBeauty.title,
+                                  category: localUpdatedBeauty.category,
+                                  description: localUpdatedBeauty.description,});
+  }
+
 }

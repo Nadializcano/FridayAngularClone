@@ -22,7 +22,7 @@ export class BeautyDetailComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
       this.beautyId = urlParameters['id'];
     });
-    this.beautyToDisplay = this.beautyService.getBeautyById(this.beautyId);
+    this.beautyToDisplay = this.beautyService.getBeautyById(this.beautyId)
   }
 
 

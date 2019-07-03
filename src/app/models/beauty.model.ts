@@ -1,9 +1,6 @@
 export class Beauty {
   constructor(public title: string,
   public category: string,
-public description: string,
-public imageSrc: string)
-  {
-
-  }
+  public description: string,
+  public imageSrc: string) {}
 }
