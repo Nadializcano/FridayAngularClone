@@ -1,7 +1,20 @@
-<section class="card-module layout-x-large standard">
-  <!-- <h2 class="header-1">Travel Ideas</h2> -->
+<div class="container">
 
-<div class="grid-col-3">
+</div>
+
+<section class="category-header" style="background-image: url(&quot;https://images.britcdn.com/wp-content/uploads/2017/10/beauty_1024.jpg&quot;);">
+  <div class="category-name header-1 center-text">Beauty</div>
+</section>
+
+<section class="card-module layout-x-large standard">
+
+
+
+
+<section class="bg-module bg-pink">
+
+
+<div class="grid-col-4">
 <div  *ngFor="let beauty of beauties | async" >
   <a class="card card-dense--mobile ">
     <div class="card-image standard-post">
@@ -9,9 +22,9 @@
     </div>
     <img src="https://images.britcdn.com/wp-content/uploads/2017/12/health-promo.jpg?w=400&amp;auto=format" class="fade-in loaded" data-visible="true"></div>
     <div class="card-information">
-      <div class="card-category header-5 header-secondary"></div>
+      <div class="card-category header-5 header-secondary">{{beauty.category}}</div>
       <div (click)="goToDetailPage(beauty)" class="">
-        <div class="card-title" >{{beauty.title}}</div>
+        <div class="card-title link-secondary" >{{beauty.title}}</div>
       </div>
 
     </div>
@@ -19,6 +32,8 @@
 
 </div>
 </div>
+
+</section>
 
 <!-- <div class="grid-col-4">
   <a class="card card-dense--mobile ">

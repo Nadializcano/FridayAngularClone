@@ -1,16 +1,14 @@
 
 <div class="container">
 
-</div>
 
-<section class="category-header" style="background-image: url(&quot;https://images.britcdn.com/wp-content/uploads/2017/10/beauty_1024.jpg&quot;);">
-  <div class="category-name header-1 center-text">Beauty</div>
-</section>
 
 <div>
-  <h3>{{(beautyToDisplay | async)?.title}}</h3>
   <h4>{{(beautyToDisplay | async)?.category}}</h4>
-  <h4>{{(beautyToDisplay | async)?.description}}</h4>
+  <h1>{{(beautyToDisplay | async)?.title}}</h1>
+  <img src="https://images.britcdn.com/wp-content/uploads/2017/12/health-promo.jpg?w=400&amp;auto=format" class="fade-in loaded" data-visible="true">
+  <p>{{(beautyToDisplay | async)?.description}}</p>
 
 
+</div>
 </div>
