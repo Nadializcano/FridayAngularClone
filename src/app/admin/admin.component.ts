@@ -1,24 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-import { BeautyService } from '../beauty.service';
-import { Beauty } from '../models/beauty.model';
+import { ArticleService } from '../article.service';
+import { Article } from '../models/article.model';
 
 
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
   styleUrls: ['./admin.component.css'],
-  providers: [BeautyService]
+  providers: [ArticleService]
 })
 export class AdminComponent implements OnInit {
 
-  constructor(private beautyService: BeautyService) { }
+  constructor(private articleService: ArticleService) { }
 
   ngOnInit() {
   }
 
-  submitBeauty(title: string, category: string, description: string){
-    var newBeauty: Beauty = new Beauty(title, category, description, this.imageSrc);
-    this.beautyService.addBeauty(newBeauty);
+  submitArticle(category: string, title: string, description: string){
+    var newArticle: Article = new Article(category, title, description, this.imageSrc);
+    this.articleService.addArticle(newArticle);
   }
 
   private imageSrc: string = '';

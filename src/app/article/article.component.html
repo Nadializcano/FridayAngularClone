@@ -3,7 +3,7 @@
 </div>
 
 <section class="category-header" style="background-image: url(&quot;https://images.britcdn.com/wp-content/uploads/2017/10/beauty_1024.jpg&quot;);">
-  <div class="category-name header-1 center-text">Beauty</div>
+  <div class="category-name header-1 center-text">Article</div>
 </section>
 
 <section class="card-module layout-x-large standard">
@@ -15,16 +15,16 @@
 
 
 <div class="grid-col-4">
-<div  *ngFor="let beauty of beauties | async" >
+<div  *ngFor="let article of articles | async" >
   <a class="card card-dense--mobile ">
     <div class="card-image standard-post">
     <div class="spacer ">
     </div>
     <img src="https://images.britcdn.com/wp-content/uploads/2017/12/health-promo.jpg?w=400&amp;auto=format" class="fade-in loaded" data-visible="true"></div>
     <div class="card-information">
-      <div class="card-category header-5 header-secondary">{{beauty.category}}</div>
-      <div (click)="goToDetailPage(beauty)" class="">
-        <div class="card-title link-secondary" >{{beauty.title}}</div>
+      <div class="card-category header-5 header-secondary">{{article.category}}</div>
+      <div (click)="goToDetailPage(article)" class="">
+        <div class="card-title link-secondary" >{{article.title}}</div>
       </div>
 
     </div>
@@ -43,7 +43,7 @@
       <img src="" class="fade-in loaded" data-visible="true"></div>
       <div class="card-information">
         <div class="card-category header-5 header-secondary" >Lifestyle</div>
-      <div class="card-title" *ngFor="let beauty of beauties">{{beauty.title}}<button (click)="editBeauty(beauty)">Edit!</button></div>
+      <div class="card-title" *ngFor="let article of articles">{{article.title}}<button (click)="editBeauty(article)">Edit!</button></div>
     </div>
   </a>
 

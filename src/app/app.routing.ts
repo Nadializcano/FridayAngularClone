@@ -1,8 +1,8 @@
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { BeautyComponent } from './beauty/beauty.component';
-import { BeautyDetailComponent } from './beauty-detail/beauty-detail.component';
+import { ArticleComponent } from './article/article.component';
+import { ArticleDetailComponent } from './article-detail/article-detail.component';
 import { AdminComponent } from './admin/admin.component';
 import { AppComponent } from './app.component';
 
@@ -12,16 +12,16 @@ const appRoutes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'beauties',
-    component: BeautyComponent
+    path: 'articles',
+    component: ArticleComponent
   },
   {
-    path: 'beauties/:id',
-    component: BeautyDetailComponent
+    path: 'articles/:id',
+    component: ArticleDetailComponent
   },
   {
   path: 'admin',
-        component: AdminComponent,
+        component: AdminComponent
     }
 ];
 

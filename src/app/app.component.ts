@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Beauty } from './models/beauty.model';
+import { Article } from './models/article.model';
 import { Router } from '@angular/router';
 
 @Component({
